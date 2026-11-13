@@ -3,10 +3,10 @@ ARITECH.BD WEBSITE
 
 Files:
 - index.html
-- assets/logo.jpg
-- assets/version-1.jpg
-- assets/version-2.jpg
-- assets/version-3.jpg
+- logo.jpg
+- version-1.jpg
+- version-2.jpg
+- version-3.jpg
 
 Preview:
 Open index.html in a browser.
