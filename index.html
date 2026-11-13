@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<script>
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+</script>
+
   <meta name="description" content="Aritech.bd Automatic Pump Controller — স্মার্ট পানি ব্যবস্থাপনা, তিনটি অপারেটিং মোড, সহজ ইনস্টলেশন ও সার্বক্ষণিক কাস্টমার সাপোর্ট।">
   <meta name="theme-color" content="#0756a5">
   <title>Aritech.bd | Automatic Pump Controller</title>
@@ -209,4 +216,25 @@
   document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>$("navLinks").classList.remove("open")));
   $("year").textContent=new Date().getFullYear();calculate();
 
-</script></body></html>
+</script>
+// Always open website from the top
+function openAtTop() {
+  if (location.hash) {
+    history.replaceState(
+      null,
+      "",
+      location.pathname + location.search
+    );
+  }
+
+  window.scrollTo(0, 0);
+}
+
+window.addEventListener("load", function () {
+  openAtTop();
+});
+
+window.addEventListener("pageshow", function () {
+  openAtTop();
+});
+</body></html>
