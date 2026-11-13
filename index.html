@@ -208,5 +208,11 @@
   $("menuBtn").addEventListener("click",()=>$("navLinks").classList.toggle("open"));
   document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>$("navLinks").classList.remove("open")));
   $("year").textContent=new Date().getFullYear();calculate();
-</script>
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+window.addEventListener("pageshow", function() {
+    window.scrollTo(0, 0);
+});</script>
 </body></html>
