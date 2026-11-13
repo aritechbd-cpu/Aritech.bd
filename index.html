@@ -208,37 +208,5 @@
   $("menuBtn").addEventListener("click",()=>$("navLinks").classList.toggle("open"));
   document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>$("navLinks").classList.remove("open")));
   $("year").textContent=new Date().getFullYear();calculate();
-if ("scrollRestoration" in history) {
-    history.scrollRestoration = "manual";
-}
 
-window.addEventListener("pageshow", function() {
-    window.scrollTo(0, 0);
-});</script>
-<script>
-(function () {
-  if ("scrollRestoration" in history) {
-    history.scrollRestoration = "manual";
-  }
-
-  if (location.hash) {
-    history.replaceState(
-      null,
-      "",
-      location.pathname + location.search
-    );
-  }
-
-  function goTop() {
-    window.scrollTo(0, 0);
-  }
-
-  window.addEventListener("load", function () {
-    goTop();
-    setTimeout(goTop, 300);
-    setTimeout(goTop, 1000);
-  });
-
-  window.addEventListener("pageshow", goTop);
-})();
 </script></body></html>
