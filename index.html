@@ -213,25 +213,4 @@
   document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>$("navLinks").classList.remove("open")));
   $("year").textContent=new Date().getFullYear();calculate();
 
-</script>
-//Always open website from the top
-function openAtTop() {
-  if (location.hash) {
-    history.replaceState(
-      null,
-      "",
-      location.pathname + location.search
-    );
-  }
-
-  window.scrollTo(0, 0);
-}
-
-window.addEventListener("load", function () {
-  openAtTop();
-});
-
-window.addEventListener("pageshow", function () {
-  openAtTop();
-});
-</body></html>
+</script></body></html>
