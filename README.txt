@@ -3,7 +3,7 @@ ARITECH.BD WEBSITE
 
 Files:
 - index.html
-- logo.jpg
+- 1000060506.png
 - version-1.jpg
 - version-2.jpg
 - version-3.jpg
