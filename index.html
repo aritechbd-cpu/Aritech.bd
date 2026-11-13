@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aritech.bd Automatic Pump Controller — স্মার্ট পানি ব্যবস্থাপনা, তিনটি অপারেটিং মোড, সহজ ইনস্টলেশন ও সার্বক্ষণিক কাস্টমার সাপোর্ট।">
+  <meta name="theme-color" content="#0756a5">
+  <title>Aritech.bd | Automatic Pump Controller</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+    :root{--blue:#0756a5;--deep:#062b55;--cyan:#14b8d4;--ink:#10243b;--muted:#607187;--pale:#eef7ff;--line:#dce8f3;--white:#fff;--shadow:0 16px 45px rgba(8,48,89,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Hind Siliguri',sans-serif;color:var(--ink);background:#fff;line-height:1.65}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1160px,92%);margin:auto}
+    .topbar{background:var(--deep);color:#eaf5ff;font-size:13px;padding:7px 0}.topbar .container{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{width:210px;height:auto;display:block}.navlinks{display:flex;align-items:center;gap:25px;font-weight:600;font-size:15px}.navlinks a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:12px 21px;background:var(--blue);color:white;font-weight:700;cursor:pointer;box-shadow:0 8px 18px rgba(7,86,165,.18);transition:.2s}.btn:hover{transform:translateY(-2px);background:#064789}.btn.outline{background:white;color:var(--blue);border:1px solid #b8d5ef;box-shadow:none}.menu{display:none;background:none;border:0;font-size:27px;color:var(--deep)}
+    .hero{background:radial-gradient(circle at 80% 20%,#d8f5ff 0,transparent 32%),linear-gradient(120deg,#f4faff,#e9f5ff 60%,#f8fcff);padding:72px 0 62px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:45px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 13px;border-radius:30px;background:#dff5ff;color:#07568d;font-weight:700;font-size:14px}.hero h1{font-size:clamp(35px,5vw,58px);line-height:1.17;margin:18px 0;color:var(--deep);font-weight:700}.hero h1 span{color:var(--blue)}.hero p{font-size:18px;color:#53677d;max-width:590px;margin:0 0 25px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:27px;color:#47627c;font-size:14px}.trust span:before{content:'✓';color:#0a9b83;font-weight:700;margin-right:7px}.hero-visual{position:relative}.hero-visual img{width:100%;max-height:420px;object-fit:contain;filter:drop-shadow(0 20px 24px rgba(13,55,91,.18));border-radius:18px}.float-tag{position:absolute;bottom:18px;left:5px;background:white;border-radius:12px;padding:12px 17px;box-shadow:var(--shadow);font-weight:700;color:var(--deep)}
+    .strip{background:var(--deep);color:white;padding:17px 0}.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center}.strip strong{display:block;font-size:17px}.strip small{color:#bcd8f2}
+    section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.kicker{color:var(--blue);font-weight:700;letter-spacing:.4px}.section-head h2{font-size:clamp(28px,4vw,40px);line-height:1.25;color:var(--deep);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+    .products{background:#f8fbff}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}.product{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(11,55,96,.06);display:flex;flex-direction:column;position:relative}.product.featured{border:2px solid #48a8e7;transform:translateY(-8px)}.product-img{height:230px;background:#f2f7fc;padding:12px;display:flex;align-items:center;justify-content:center}.product-img img{width:100%;height:100%;object-fit:contain;border-radius:10px}.product-body{padding:22px;display:flex;flex-direction:column;flex:1}.version{font-family:Rajdhani,sans-serif;font-weight:700;color:var(--blue);letter-spacing:1px}.product h3{font-size:23px;margin:3px 0 4px;color:var(--deep)}.price{font-size:31px;font-weight:700;color:var(--blue);margin:7px 0}.price small{font-size:14px;color:var(--muted);font-weight:500}.product-desc{color:var(--muted);min-height:76px;margin:0 0 12px}.pills{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 16px}.pill{background:#edf7ff;color:#24577f;border-radius:30px;padding:4px 10px;font-size:12px;font-weight:600}.spec-list{list-style:none;padding:0;margin:0 0 20px;border-top:1px solid var(--line)}.spec-list li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #edf2f7;font-size:14px}.spec-list li span:first-child{color:#63758a}.spec-list li b{text-align:right}.product .btn{width:100%;margin-top:auto}.popular{position:absolute;top:13px;right:13px;background:#0a9b83;color:white;border-radius:20px;padding:4px 11px;font-size:12px;font-weight:700}
+    .modes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.mode{border:1px solid var(--line);border-radius:15px;padding:23px;background:white}.mode .num{width:40px;height:40px;display:grid;place-items:center;background:#e5f5ff;color:var(--blue);font-weight:700;border-radius:12px;font-size:19px}.mode h3{margin:12px 0 5px;color:var(--deep)}.mode p{margin:0;color:var(--muted);font-size:14px}
+    .compare-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)}table{border-collapse:collapse;width:100%;min-width:690px;background:white}th,td{padding:13px 16px;text-align:center;border-bottom:1px solid var(--line)}th{background:var(--deep);color:white}td:first-child{text-align:left;font-weight:600;color:#425b74}tr:last-child td{border-bottom:0}.yes{color:#078b70;font-weight:700}.no{color:#b65b5b}.compare-note{font-size:13px;color:var(--muted);margin-top:12px}
+    .service{background:linear-gradient(120deg,#062b55,#0756a5);color:white}.service .section-head h2,.service .section-head p{color:white}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.service-card{padding:20px;border:1px solid rgba(255,255,255,.22);border-radius:15px;background:rgba(255,255,255,.08)}.service-card .icon{font-size:27px}.service-card h3{margin:8px 0 4px;font-size:18px}.service-card p{margin:0;color:#c8def2;font-size:14px}
+    .terms-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.term{padding:20px 22px;border:1px solid var(--line);border-radius:14px}.term h3{margin:0 0 8px;color:var(--deep)}.term ul{margin:0;padding-left:20px;color:var(--muted)}.term li{margin:5px 0}
+    .order{background:#f3f9ff}.order-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:30px;align-items:start}.order-info{background:var(--deep);color:white;padding:28px;border-radius:18px}.order-info h3{font-size:25px;margin:0 0 8px}.order-info p{color:#c6ddf3}.contact-line{padding:12px 0;border-top:1px solid rgba(255,255,255,.17);font-size:15px}.contact-line b{display:block;color:#9ddfff;font-size:13px}.form-card{background:white;padding:28px;border-radius:18px;box-shadow:var(--shadow)}.form-card h3{margin:0 0 18px;color:var(--deep);font-size:24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-weight:600;font-size:14px;color:#405a73}.field input,.field select,.field textarea{width:100%;border:1px solid #ccdae8;border-radius:9px;padding:11px 12px;background:#fff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#2689d0;box-shadow:0 0 0 3px #dff1ff}.field textarea{min-height:85px;resize:vertical}.summary{background:#f1f8ff;border:1px solid #d7eafa;border-radius:12px;padding:15px;margin:16px 0}.sumrow{display:flex;justify-content:space-between;gap:12px;padding:4px 0}.sumtotal{border-top:1px solid #cfe1f1;margin-top:7px;padding-top:10px;font-size:19px;font-weight:700;color:var(--blue)}.fine{font-size:12px;color:var(--muted);margin:9px 0}.submit{width:100%;font-size:17px;padding:14px}.footer{background:#041f3e;color:#d8e8f8;padding:35px 0 20px}.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap;align-items:center}.footer img{width:190px;background:white;border-radius:7px;padding:5px}.footer p{margin:8px 0;color:#abc5df;font-size:14px}.copyright{border-top:1px solid #234260;margin-top:25px;padding-top:15px;color:#94afca;font-size:13px;text-align:center}.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;background:#13a66a;color:white;padding:12px 17px;border-radius:50px;box-shadow:0 8px 25px #0b744c55;font-weight:700}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:20px}.hero-visual{max-width:620px;margin:auto}.product-grid{grid-template-columns:1fr 1fr}.product.featured{transform:none}.service-grid{grid-template-columns:1fr 1fr}.order-layout{grid-template-columns:1fr}.navlinks{gap:14px}}
+    @media(max-width:650px){.topbar .container{justify-content:center;text-align:center}.nav{height:66px}.brand img{width:165px}.menu{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:white;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks .btn{width:100%}.hero{padding:48px 0}.hero p{font-size:16px}.strip-grid{grid-template-columns:1fr 1fr;row-gap:17px}section{padding:55px 0}.product-grid,.modes-grid,.terms-grid{grid-template-columns:1fr}.product-img{height:245px}.service-grid{grid-template-columns:1fr 1fr}.form-card,.order-info{padding:20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.float-tag{font-size:13px}.wa-float{right:12px;bottom:12px;font-size:13px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>স্মার্ট পানি ব্যবস্থাপনার নির্ভরযোগ্য সমাধান</span><span>কল করুন: <a href="tel:+8801335059693">+880 1335-059693</a></span></div></div>
+  <header><div class="container nav">
+    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="Aritech.bd logo"></a>
+    <button class="menu" id="menuBtn" aria-label="মেনু খুলুন">☰</button>
+    <nav class="navlinks" id="navLinks"><a href="#products">পণ্যসমূহ</a><a href="#features">ফিচার</a><a href="#compare">তুলনা</a><a href="#support">সাপোর্ট</a><a class="btn" href="#order">অর্ডার করুন</a></nav>
+  </div></header>
+
+  <main>
+    <section class="hero" id="home"><div class="container hero-grid">
+      <div><span class="eyebrow">● ARITECH.BD · TECHNOLOGY SOLUTIONS</span>
+        <h1>পাম্প চালু–বন্ধের চিন্তা নয়,<br><span>পানি থাকুক নিয়ন্ত্রণে</span></h1>
+        <p>Aritech Automatic Pump Controller দিয়ে পানির ট্যাংকের অবস্থা অনুযায়ী পাম্প নিয়ন্ত্রণ করুন। আপনার প্রয়োজন ও পাম্পের ক্ষমতা অনুযায়ী বেছে নিন ৩টি ভার্সনের মধ্যে সঠিকটি।</p>
+        <div class="hero-actions"><a class="btn" href="#products">পণ্য দেখুন →</a><a class="btn outline" href="https://wa.me/8801335059693" target="_blank" rel="noopener">WhatsApp-এ কথা বলুন</a></div>
+        <div class="trust"><span>৩টি অপারেটিং মোড</span><span>সহজ ইনস্টলেশন</span><span>ভিডিও কল সাপোর্ট</span></div>
+      </div>
+      <div class="hero-visual"><img src="assets/version-3.jpg" alt="Aritech Automatic Pump Controller Version 3"><div class="float-tag">স্মার্ট · নিরাপদ · স্বয়ংক্রিয়</div></div>
+    </div></section>
+
+    <div class="strip"><div class="container strip-grid">
+      <div><strong>৩টি মোড</strong><small>Automatic · Semi · Bypass</small></div>
+      <div><strong>৫ মিটার ক্যাবল</strong><small>প্রতিটি ডিভাইসের সঙ্গে</small></div>
+      <div><strong>ফ্রি টেকনিক্যাল সাপোর্ট</strong><small>ভিডিও কলের মাধ্যমে</small></div>
+      <div><strong>ক্যাশ অন ডেলিভারি</strong><small>অর্ডার কনফার্মের পর</small></div>
+    </div></div>
+
+    <section class="products" id="products"><div class="container">
+      <div class="section-head"><div class="kicker">OUR PRODUCTS</div><h2>আপনার প্রয়োজন অনুযায়ী বেছে নিন</h2><p>তিনটি ভার্সনেই রয়েছে Full Automatic, Semi Automatic এবং জরুরি প্রয়োজনে Bypass Mode।</p></div>
+      <div class="product-grid">
+        <article class="product"><div class="product-img"><img src="assets/version-1.jpg" alt="Aritech pump controller version 1"></div><div class="product-body">
+          <div class="version">VERSION 01</div><h3>Essential Controller</h3><div class="price">৳৩,৫০০ <small>এককালীন মূল্য</small></div>
+          <p class="product-desc">শুধুমাত্র বাড়ির ছাদের ট্যাংকে পানির সরবরাহ স্বয়ংক্রিয়ভাবে নিশ্চিত করার জন্য।</p>
+          <div class="pills"><span class="pill">০.৫–১ HP</span><span class="pill">৫ Amp</span><span class="pill">220 Volt</span></div>
+          <ul class="spec-list"><li><span>Sensor System</span><b class="yes">আছে</b></li><li><span>Regular Protection</span><b class="yes">আছে</b></li><li><span>Advanced VA Protection</span><b class="no">নেই</b></li><li><span>Dry-Run Protection</span><b class="no">নেই</b></li><li><span>রিপ্লেসমেন্ট গ্যারান্টি</span><b>১ বছর</b></li><li><span>ওয়ারেন্টি</span><b>৫ বছর</b></li></ul>
+          <button class="btn choose" data-version="Version 1" type="button">এই ভার্সন অর্ডার করুন</button>
+        </div></article>
+        <article class="product featured"><span class="popular">জনপ্রিয় পছন্দ</span><div class="product-img"><img src="assets/version-2.jpg" alt="Aritech pump controller version 2"></div><div class="product-body">
+          <div class="version">VERSION 02</div><h3>Advanced Controller</h3><div class="price">৳৫,৫০০ <small>এককালীন মূল্য</small></div>
+          <p class="product-desc">ভূগর্ভস্থ ও ছাদের—দুই ট্যাংকের পানির অবস্থার ভিত্তিতে পাম্প নিয়ন্ত্রণ করে।</p>
+          <div class="pills"><span class="pill">০.৫–৩ HP</span><span class="pill">Up to 10 Amp</span><span class="pill">220 Volt</span></div>
+          <ul class="spec-list"><li><span>Sensor System</span><b class="yes">আছে</b></li><li><span>Regular Protection</span><b class="yes">আছে</b></li><li><span>Advanced VA Protection</span><b class="yes">আছে</b></li><li><span>Dry-Run Protection</span><b class="yes">আছে</b></li><li><span>Leakage / Shock Protection</span><b class="yes">আছে</b></li><li><span>রিপ্লেসমেন্ট গ্যারান্টি</span><b>১ বছর</b></li><li><span>ওয়ারেন্টি</span><b>১০ বছর</b></li></ul>
+          <button class="btn choose" data-version="Version 2" type="button">এই ভার্সন অর্ডার করুন</button>
+        </div></article>
+        <article class="product"><div class="product-img"><img src="assets/version-3.jpg" alt="Aritech pump controller version 3"></div><div class="product-body">
+          <div class="version">VERSION 03</div><h3>Smart Wi-Fi Controller</h3><div class="price">৳৮,৫০০ <small>এককালীন মূল্য</small></div>
+          <p class="product-desc">দুই ট্যাংকের পানি পর্যবেক্ষণের পাশাপাশি স্মার্টফোনে Wi-Fi দিয়ে পাম্প নিয়ন্ত্রণ ও গুরুত্বপূর্ণ ডেটা দেখুন।</p>
+          <div class="pills"><span class="pill">Up to 5 HP</span><span class="pill">Up to 32 Amp</span><span class="pill">Up to 420 Volt</span></div>
+          <ul class="spec-list"><li><span>Single / Three Phase</span><b class="yes">সমর্থিত</b></li><li><span>Sensor & Protection</span><b class="yes">আছে</b></li><li><span>Timer System</span><b class="yes">আছে</b></li><li><span>Mobile App Control</span><b class="yes">আছে</b></li><li><span>Dry-Run / Leakage / Shock</span><b class="yes">আছে</b></li><li><span>রিপ্লেসমেন্ট গ্যারান্টি</span><b>১ বছর</b></li><li><span>ওয়ারেন্টি</span><b>১০ বছর</b></li></ul>
+          <button class="btn choose" data-version="Version 3" type="button">এই ভার্সন অর্ডার করুন</button>
+        </div></article>
+      </div>
+    </div></section>
+
+    <section id="features"><div class="container">
+      <div class="section-head"><div class="kicker">3 OPERATING MODES</div><h2>প্রতিটি ডিভাইসে ৩টি অপারেটিং মোড</h2><p>প্রয়োজন অনুযায়ী সহজেই অপারেটিং মোড নির্বাচন করুন।</p></div>
+      <div class="modes-grid">
+        <div class="mode"><div class="num">01</div><h3>Full Automatic Mode</h3><p>সেন্সরের মাধ্যমে ট্যাংকের পানির অবস্থা বুঝে স্বয়ংক্রিয়ভাবে পাম্প চালু ও বন্ধ করে।</p></div>
+        <div class="mode"><div class="num">02</div><h3>Semi Automatic Mode</h3><p>প্রয়োজন অনুযায়ী ব্যবহারকারী নিজে পাম্প পরিচালনার নিয়ন্ত্রণ নিতে পারবেন।</p></div>
+        <div class="mode"><div class="num">03</div><h3>Emergency Bypass Mode</h3><p>জরুরি প্রয়োজনে Bypass Mode ব্যবহার করে বিকল্পভাবে পাম্প পরিচালনা করা যাবে।</p></div>
+      </div>
+    </div></section>
+
+    <section id="compare" style="background:#f8fbff"><div class="container">
+      <div class="section-head"><div class="kicker">COMPARE VERSIONS</div><h2>তিনটি ভার্সনের তুলনা</h2><p>আপনার পাম্পের ক্ষমতা ও প্রয়োজন অনুযায়ী সঠিক মডেল নির্বাচন করুন।</p></div>
+      <div class="compare-wrap"><table><thead><tr><th>ফিচার</th><th>Version 1</th><th>Version 2</th><th>Version 3</th></tr></thead><tbody>
+        <tr><td>মূল্য</td><td>৳৩,৫০০</td><td>৳৫,৫০০</td><td>৳৮,৫০০</td></tr>
+        <tr><td>ট্যাংক পর্যবেক্ষণ</td><td>ছাদের ট্যাংক</td><td>ভূগর্ভস্থ + ছাদ</td><td>ভূগর্ভস্থ + ছাদ</td></tr>
+        <tr><td>পাম্প ক্ষমতা</td><td>০.৫–১ HP</td><td>০.৫–৩ HP</td><td>Up to 5 HP</td></tr>
+        <tr><td>সর্বোচ্চ কারেন্ট</td><td>5 Amp</td><td>Up to 10 Amp</td><td>Up to 32 Amp</td></tr>
+        <tr><td>Advanced VA Protection</td><td class="no">নেই</td><td class="yes">আছে</td><td class="yes">আছে</td></tr>
+        <tr><td>Dry-Run Protection</td><td class="no">নেই</td><td class="yes">আছে</td><td class="yes">আছে</td></tr>
+        <tr><td>Leakage / Shock Protection</td><td>উল্লেখ নেই</td><td class="yes">আছে</td><td class="yes">আছে</td></tr>
+        <tr><td>Timer</td><td class="no">নেই</td><td class="no">উল্লেখ নেই</td><td class="yes">আছে</td></tr>
+        <tr><td>Mobile App / Wi-Fi</td><td class="no">নেই</td><td class="no">নেই</td><td class="yes">আছে</td></tr>
+        <tr><td>ওয়ারেন্টি</td><td>৫ বছর</td><td>১০ বছর</td><td>১০ বছর</td></tr>
+      </tbody></table></div><p class="compare-note">* “উল্লেখ নেই” মানে প্রদত্ত স্পেসিফিকেশনে ফিচারটি নিশ্চিত করা হয়নি। কেনার আগে পাম্পের ভোল্টেজ, ফেজ, HP ও কারেন্ট রেটিং মিলিয়ে নিন।</p>
+    </div></section>
+
+    <section class="service" id="support"><div class="container">
+      <div class="section-head"><div class="kicker" style="color:#9ee8ff">WHY ARITECH.BD</div><h2>কেন Aritech.bd বেছে নেবেন?</h2><p>পণ্য কেনা থেকে ইনস্টলেশন ও ব্যবহার—প্রতিটি ধাপে পাশে আছে আমাদের টিম।</p></div>
+      <div class="service-grid">
+        <div class="service-card"><div class="icon">🛠️</div><h3>সহজ ইনস্টলেশন</h3><p>সহজভাবে ইনস্টল করার উপযোগী ডিজাইন ও প্রয়োজনীয় নির্দেশনা।</p></div>
+        <div class="service-card"><div class="icon">📞</div><h3>সার্বক্ষণিক কাস্টমার কেয়ার</h3><p>প্রয়োজনে ফোনে যোগাযোগ করে সহায়তা নিন।</p></div>
+        <div class="service-card"><div class="icon">🎥</div><h3>ফ্রি ভিডিও সাপোর্ট</h3><p>ভিডিও কলের মাধ্যমে সম্পূর্ণ ফ্রি টেকনিক্যাল সাপোর্ট।</p></div>
+        <div class="service-card"><div class="icon">🚚</div><h3>ক্যাশ অন ডেলিভারি</h3><p>অর্ডার কনফার্মের পর ৩ কার্যদিবসের মধ্যে পাঠানো হবে।</p></div>
+      </div>
+    </div></section>
+
+    <section><div class="container">
+      <div class="section-head"><div class="kicker">DELIVERY & WARRANTY</div><h2>ডেলিভারি, ইনস্টলেশন ও শর্তাবলি</h2></div>
+      <div class="terms-grid">
+        <div class="term"><h3>🚚 ডেলিভারি</h3><ul><li>ঢাকার ভিতরে ডেলিভারি চার্জ ১০০ টাকা।</li><li>ঢাকার বাইরে ডেলিভারি চার্জ ২০০ টাকা।</li><li>অর্ডার কনফার্মের পর ৩ কার্যদিবসের মধ্যে পণ্য পাঠানো হবে।</li><li>সম্পূর্ণ Cash on Delivery (COD)।</li></ul></div>
+        <div class="term"><h3>🔧 ইনস্টলেশন ও ক্যাবল</h3><ul><li>ঢাকা ও পার্শ্ববর্তী এলাকায় ইনস্টলেশন চার্জ ৫০০ টাকা।</li><li>ঢাকার বাইরে ইনস্টলেশন চার্জ আলোচনা সাপেক্ষে।</li><li>প্রতিটি ডিভাইসের সঙ্গে ৫ মিটার ক্যাবল ও সেন্সর বরাদ্দ।</li><li>অতিরিক্ত ক্যাবল প্রতি মিটার ২০ টাকা।</li></ul></div>
+        <div class="term"><h3>🛡️ গ্যারান্টি ও ওয়ারেন্টি</h3><ul><li>প্রতিটি ডিভাইসে ১ বছর রিপ্লেসমেন্ট গ্যারান্টি।</li><li>Version 1: ৫ বছর ওয়ারেন্টি।</li><li>Version 2 ও 3: ১০ বছর ওয়ারেন্টি।</li><li>বাহ্যিক আঘাত ও বৈদ্যুতিক ত্রুটির ক্ষেত্রে গ্যারান্টি/ওয়ারেন্টি প্রযোজ্য নয়।</li></ul></div>
+        <div class="term"><h3>💬 অর্ডার ও সহায়তা</h3><ul><li>অর্ডার সাবমিটের পর WhatsApp-এ অর্ডারের তথ্য পাঠানো হবে।</li><li>কোম্পানির প্রতিনিধি যোগাযোগ করে অর্ডার নিশ্চিত করবেন।</li><li>ভিডিও কলের মাধ্যমে ফ্রি টেকনিক্যাল সাপোর্ট।</li></ul></div>
+      </div>
+    </div></section>
+
+    <section class="order" id="order"><div class="container">
+      <div class="section-head"><div class="kicker">PLACE YOUR ORDER</div><h2>আপনার অর্ডার সাবমিট করুন</h2><p>ফর্মটি পূরণ করুন। অর্ডারের সারাংশ WhatsApp-এ পাঠিয়ে কনফার্ম করুন।</p></div>
+      <div class="order-layout">
+        <aside class="order-info"><h3>সরাসরি যোগাযোগ</h3><p>পণ্য নির্বাচন বা স্পেসিফিকেশন বুঝতে সহায়তা প্রয়োজন হলে আমাদের সঙ্গে কথা বলুন।</p>
+          <div class="contact-line"><b>ফোন / WhatsApp</b><a href="tel:+8801335059693">+8801335059693</a></div>
+          <div class="contact-line"><b>ইমেইল</b><a href="mailto:aritech.bd.ltd@gmail.com">aritech.bd.ltd@gmail.com</a></div>
+          <div class="contact-line"><b>ঠিকানা</b>১৪৬/৪/বি, নিকুঞ্জ-২, খিলক্ষেত, ঢাকা।</div>
+          <div class="contact-line"><b>পেমেন্ট</b>ক্যাশ অন ডেলিভারি (COD)</div>
+        </aside>
+        <div class="form-card"><h3>অর্ডার ফর্ম</h3>
+          <form id="orderForm">
+            <div class="form-grid">
+              <div class="field"><label for="customer">আপনার নাম *</label><input id="customer" required placeholder="সম্পূর্ণ নাম"></div>
+              <div class="field"><label for="phone">মোবাইল নম্বর *</label><input id="phone" required inputmode="tel" placeholder="01XXXXXXXXX"></div>
+              <div class="field"><label for="product">পছন্দের ভার্সন *</label><select id="product" required><option value="Version 1">Version 1 — ৳৩,৫০০</option><option value="Version 2" selected>Version 2 — ৳৫,৫০০</option><option value="Version 3">Version 3 — ৳৮,৫০০</option></select></div>
+              <div class="field"><label for="area">ডেলিভারি এলাকা *</label><select id="area"><option value="ঢাকার ভিতরে">ঢাকার ভিতরে</option><option value="ঢাকার বাইরে">ঢাকার বাইরে</option></select></div>
+              <div class="field full"><label for="address">সম্পূর্ণ ডেলিভারি ঠিকানা *</label><textarea id="address" required placeholder="বাসা/ফ্ল্যাট, রোড, এলাকা, থানা, জেলা"></textarea></div>
+              <div class="field"><label for="install">ইনস্টলেশন প্রয়োজন?</label><select id="install"><option value="না">না</option><option value="হ্যাঁ">হ্যাঁ</option></select></div>
+              <div class="field"><label for="cable">মোট ক্যাবল প্রয়োজন (মিটার)</label><input id="cable" type="number" min="5" step="1" value="5"></div>
+              <div class="field full"><label for="notes">অতিরিক্ত তথ্য (ঐচ্ছিক)</label><textarea id="notes" placeholder="পাম্পের HP, ভোল্টেজ, ফেজ বা অন্য কোনো তথ্য"></textarea></div>
+            </div>
+            <div class="summary" aria-live="polite">
+              <div class="sumrow"><span>পণ্যের মূল্য</span><b id="productPrice">৳৫,৫০০</b></div>
+              <div class="sumrow"><span>ডেলিভারি চার্জ</span><b id="deliveryPrice">৳১০০</b></div>
+              <div class="sumrow"><span>ইনস্টলেশন চার্জ</span><b id="installPrice">৳০</b></div>
+              <div class="sumrow"><span>অতিরিক্ত ক্যাবল চার্জ</span><b id="cablePrice">৳০</b></div>
+              <div class="sumrow sumtotal"><span>আনুমানিক মোট</span><b id="totalPrice">৳৫,৬০০</b></div>
+              <p class="fine" id="priceNote">ঢাকার বাইরে ইনস্টলেশন চার্জ আলোচনা সাপেক্ষে। চূড়ান্ত অর্ডার ফোনে নিশ্চিত করা হবে।</p>
+            </div>
+            <button class="btn submit" type="submit">WhatsApp-এ অর্ডার পাঠান →</button>
+            <p class="fine">সাবমিট করলে WhatsApp খুলবে এবং আপনার অর্ডারের বিস্তারিত মেসেজ তৈরি হবে। Send চাপলে অর্ডারটি আমাদের কাছে পৌঁছাবে।</p>
+          </form>
+        </div>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid"><div><img src="assets/logo.jpg" alt="Aritech.bd"><p>Technology Solutions & Services</p></div><div><b>যোগাযোগ</b><p>+8801335059693<br>aritech.bd.ltd@gmail.com<br>১৪৬/৪/বি, নিকুঞ্জ-২, খিলক্ষেত, ঢাকা</p></div></div>
+    <div class="copyright">© <span id="year"></span> Aritech.bd. All rights reserved.</div>
+  </div></footer>
+  <a class="wa-float" href="https://wa.me/8801335059693" target="_blank" rel="noopener">☏ WhatsApp</a>
+
+<script>
+  const prices = {"Version 1":3500,"Version 2":5500,"Version 3":8500};
+  const $ = id => document.getElementById(id);
+  const money = n => "৳" + Number(n).toLocaleString("en-US");
+  function calculate(){
+    const version=$("product").value, area=$("area").value, install=$("install").value;
+    const cable=Math.max(5,parseInt($("cable").value||5,10));
+    const product=prices[version], delivery=area==="ঢাকার ভিতরে"?100:200;
+    const installCost=install==="হ্যাঁ"?(area==="ঢাকার ভিতরে"?500:null):0;
+    const extraCable=(cable-5)*20;
+    $("productPrice").textContent=money(product);$("deliveryPrice").textContent=money(delivery);
+    $("installPrice").textContent=installCost===null?"আলোচনা সাপেক্ষে":money(installCost);
+    $("cablePrice").textContent=money(extraCable);
+    $("totalPrice").textContent=installCost===null?"৳"+(product+delivery+extraCable).toLocaleString("en-US")+" + ইনস্টলেশন":money(product+delivery+extraCable+installCost);
+    $("priceNote").textContent=installCost===null?"ঢাকার বাইরে ইনস্টলেশন চার্জ আলোচনা সাপেক্ষে; মোটে তা যোগ করা হয়নি।": "চূড়ান্ত অর্ডার ফোনে নিশ্চিত করা হবে।";
+  }
+  ["product","area","install","cable"].forEach(id=>$(id).addEventListener("input",calculate));
+  document.querySelectorAll(".choose").forEach(btn=>btn.addEventListener("click",()=>{$("product").value=btn.dataset.version;calculate();$("order").scrollIntoView({behavior:"smooth"});}));
+  $("orderForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    const name=$("customer").value.trim(), phone=$("phone").value.trim(), version=$("product").value;
+    const area=$("area").value, address=$("address").value.trim(), install=$("install").value;
+    const cable=Math.max(5,parseInt($("cable").value||5,10)), notes=$("notes").value.trim();
+    const product=prices[version], delivery=area==="ঢাকার ভিতরে"?100:200, extra=(cable-5)*20;
+    const installCost=install==="হ্যাঁ"?(area==="ঢাকার ভিতরে"?500:null):0;
+    const total=product+delivery+extra+(installCost||0);
+    const msg=[
+      "নতুন অর্ডার — Aritech.bd","",
+      "নাম: "+name,"মোবাইল: "+phone,"পণ্য: "+version,
+      "পণ্যের মূল্য: "+money(product),"ডেলিভারি এলাকা: "+area,
+      "ডেলিভারি চার্জ: "+money(delivery),"ইনস্টলেশন: "+install,
+      "ইনস্টলেশন চার্জ: "+(installCost===null?"আলোচনা সাপেক্ষে":money(installCost)),
+      "ক্যাবল: "+cable+" মিটার","অতিরিক্ত ক্যাবল চার্জ: "+money(extra),
+      "আনুমানিক মোট: "+money(total)+(installCost===null?" + ইনস্টলেশন চার্জ":""),
+      "ঠিকানা: "+address,"অতিরিক্ত তথ্য: "+(notes||"নেই"),"",
+      "পেমেন্ট: Cash on Delivery"
+    ].join("\n");
+    window.open("https://wa.me/8801335059693?text="+encodeURIComponent(msg),"_blank");
+  });
+  $("menuBtn").addEventListener("click",()=>$("navLinks").classList.toggle("open"));
+  document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>$("navLinks").classList.remove("open")));
+  $("year").textContent=new Date().getFullYear();calculate();
+</script>
+</body></html>
